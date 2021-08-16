@@ -237,7 +237,7 @@ class SnarkArgsHelper {
     r: number,
     distMax: number
   ): Promise<MoveSnarkContractCallArgs> {
-    const cacheKey = `${x1}-${y1}-${x2}-${y2}-${r}-${distMax}`;
+    const cacheKey = `${x1}-${y1}-${x2}-${y2}-${distMax}`;
     const cachedResult = this.moveSnarkCache.get(cacheKey);
     if (cachedResult) {
       console.log('MOVE: retrieved snark args from cache');
